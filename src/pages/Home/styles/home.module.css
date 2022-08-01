@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    background-color: #831843;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+}
+.header h1 {
+    font-size: 25px;
+}
+
+.headerList {
+    display: flex;
+    gap: 1rem;
+}
+.headerList li a{
+    color: white;
+}
+.header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.header div p {
+    font-size: 13px;
+}
+
+.header button{
+    background-color: rgb(245, 237, 245);
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 600;
+    font-style: italic;
+}
+

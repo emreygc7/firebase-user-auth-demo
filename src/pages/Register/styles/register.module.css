@@ -1,0 +1,85 @@
+.registerContainer{
+    display: flex;
+    height: 100vh;
+    background-image: url(../../../assets/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.registerContainer form {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #eee;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.registerContainer h1 {
+    font-size: 25px;
+}
+
+.registerContainer input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid purple;
+    padding: 0.5rem 1rem;
+}
+
+.registerContainer input:focus{
+    border: none;
+}
+
+.registerContainer button{
+    background-color: purple;
+    border: none;
+    padding: .5rem 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.registerContainer button:hover{
+    background-color: rgb(65, 1, 65);
+    transition: all .5s ease-in-out;
+}
+
+
+
+/* iPADS, TABLETS */ 
+@media screen and (min-width:481px) and (max-width: 768px){
+
+   .registerContainer form{
+    width: 70vw;
+   }
+}
+
+/* SMALL SCREENS, LAPTOPS */
+@media screen and (min-width:769px) and (max-width: 1024px){
+
+
+    .registerContainer form{
+        width: 55vw;
+    }
+}
+
+/* DESKTOPS, LARGE SCREENS */ 
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+
+    .registerContainer form{
+        width: 45vw;
+    }
+}
+
+/* EXTRA LARGE SCREENS */ 
+
+@media screen and (min-width: 1200px) {
+
+    .registerContainer form{
+        width: 25vw;
+        margin: 2rem;
+    }
+}

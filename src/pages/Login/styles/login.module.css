@@ -1,0 +1,92 @@
+
+.loginContainer{
+    background: url(../../../assets/img/login-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loginContainer form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #eee;
+    gap: 1rem;
+    width: 90vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.loginContainer h1 {
+    font-size: 25px;
+}
+
+.loginContainer input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid purple;
+    padding: 0.5rem 1rem;
+}
+
+.loginContainer input:focus{
+    border: none;
+}
+
+
+.loginContainer button{
+    background-color: purple;
+    border: none;
+    padding: .5rem 2rem;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    margin: auto;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.loginContainer button:hover{
+    background-color: rgb(65, 1, 65);
+    transition: all .5s ease-in-out;
+}
+
+
+/* iPADS, TABLETS */ 
+@media screen and (min-width:481px) and (max-width: 768px){
+
+    .loginContainer form {
+     width: 70vw;
+    }
+ }
+ 
+ /* SMALL SCREENS, LAPTOPS */
+ @media screen and (min-width:769px) and (max-width: 1024px){
+ 
+ 
+     .loginContainer form {
+         width: 55vw;
+     }
+ }
+ 
+ /* DESKTOPS, LARGE SCREENS */ 
+ @media screen and (min-width:1025px) and (max-width: 1200px) {
+ 
+     .loginContainer form{
+         width: 45vw;
+     }
+ }
+ 
+ /* EXTRA LARGE SCREENS */ 
+ 
+ @media screen and (min-width: 1200px) {
+ 
+     .loginContainer form{
+         width: 30vw;
+         margin: 2rem;
+     }
+ }
+ 
