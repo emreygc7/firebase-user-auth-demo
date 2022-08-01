@@ -5,22 +5,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 12px;
 }
 
 .registerContainer form {
-    width: 80vw;
-    height: 70vh;
+    width: 85vw;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     margin: auto;
     background-color: #eee;
     padding: 2rem;
-    gap: 1rem;
+    gap: .8rem;
     border-radius: 15px;
 }
 
 .registerContainer h1 {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .registerContainer input{
@@ -48,12 +49,20 @@
 }
 
 
-
+/* SMALL iPhone */
+@media screen and (min-width:310px) and (max-width: 480px) {
+    .registerContainer form{
+        width: 80vw;
+        height: 95vh;
+       }
+} 
 /* iPADS, TABLETS */ 
 @media screen and (min-width:481px) and (max-width: 768px){
 
    .registerContainer form{
     width: 70vw;
+    height: 65vh;
+  
    }
 }
 
@@ -63,6 +72,7 @@
 
     .registerContainer form{
         width: 55vw;
+        height: 65vh;
     }
 }
 
@@ -71,6 +81,7 @@
 
     .registerContainer form{
         width: 45vw;
+        height: 65vh;
     }
 }
 
@@ -80,6 +91,7 @@
 
     .registerContainer form{
         width: 25vw;
+        height: 65vh;
         margin: 2rem;
     }
 }
